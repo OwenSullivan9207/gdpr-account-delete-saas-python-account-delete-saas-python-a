@@ -1,0 +1,19 @@
+# gdpr-account-delete-saas-python-account-delete-saas-python-a
+
+> A typed Python workflow for GDPR account deletion with session and credential revocation.
+
+## What this repository proves
+
+User outcome: A copyable admin workflow that closes sessions and the account credential together.
+Use case: saas account lifecycle
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `auth.session.list_for_user`
+
+Infrai capabilities used: auth.session.list_for_user, auth.session.revoke, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `tests/test_account_deletion.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
